@@ -1,12 +1,255 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<head>
-    <title>Under Consturction</title>
-</head>
+    <title>Zijie Ye</title>
 
-<body>
-    <h1>Under Consturction</h1>
-</body>
+    <meta name="author" content="Zijie Ye">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="static/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
 
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Zijie Ye
+                </p>
+                <p>I'm a 4th-year PhD candidate at <a href="https://www.cs.tsinghua.edu.cn/csen/">Department of Computer Science and Technology</a> (DCST), Tsinghua University. My advisor is Prof. <a href="https://hcsi.cs.tsinghua.edu.cn/">Jia Jia</a>. I received my B.Eng. degree from DCST, Tsinghua University in 2020.
+                </p>
+                <p>
+                  I am working on <b>3D Human Motion Generation & Processing</b>. I am actively looking for <b>full-time positions</b>. Please send an email if you are interested.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:yzjscwy@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="/static/pdf/CV_YEZIJIE.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="static/pdf/叶梓杰_CV.pdf">CV (Chinese)</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=0PpDl-8AAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/abcyzj/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="static/images/avatar.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="static/images/avatar.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Selected Publications</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+            <tr onmouseout="s2h_stop()" onmouseover="s2h_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='s2h_image'><video  width=100% height=100% muted autoplay loop>
+                    <source src="/static/video/S2H.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='/static/images/S2H.png' width="160">
+                    </div>
+                    <script type="text/javascript">
+                    function s2h_start() {
+                        document.getElementById('s2h_image').style.opacity = "1";
+                    }
+
+                    function s2h_stop() {
+                        document.getElementById('s2h_image').style.opacity = "0";
+                    }
+                    s2h_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="/S2H/">
+                        <span class="papertitle">Semantics2Hands: Transferring Hand Motion Semantics between Avatars</span>
+                    </a>
+                    <br>
+                    <b>Zijie Ye</b>,
+                    <a href="https://hcsi.cs.tsinghua.edu.cn/">Jia Jia</a>,
+                    <a href="https://scholar.google.com/citations?user=jSwNd3MAAAAJ">Junliang Xing</a>
+                    <br>
+                    <em>ACM MM Oral</em>, <em><a href="https://www.cs.tsinghua.edu.cn/info/1088/5750.htm">Brave New Idead Award</a></em> 2023
+                    <br>
+                    <a href="/S2H/static/pdfs/S2H-camera.pdf">PDF</a>
+                    /
+                    <a href="/S2H/">Project Page</a>
+                    /
+                    <a href="https://arxiv.org/abs/2308.05920">arXiv</a>
+                    /
+                    <a href="https://github.com/abcyzj/Semantics2Hands">Code</a>
+                    <p></p>
+                    <p>
+                            Given a source hand motion and a target hand model, our method can retarget realistic hand motions with high fidelity to the target while preserving intricate motion semantics. 
+                    </p>
+                </td>
+            </tr>
+
+
+            <tr onmouseout="gesture_stop()" onmouseover="gesture_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='gesture_image'><video  width=100% height=100% muted autoplay loop>
+                    <source src="/static/video/Gesture.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='/static/images/Gesture.jpg' width="160">
+                    </div>
+                    <script type="text/javascript">
+                    function gesture_start() {
+                        document.getElementById('gesture_image').style.opacity = "1";
+                    }
+    
+                    function gesture_stop() {
+                        document.getElementById('gesture_image').style.opacity = "0";
+                    }
+                    gesture_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10095304/">
+                        <span class="papertitle">Salient Co-Speech Gesture Synthesizing with Discrete Motion Representation</span>
+                    </a>
+                    <br>
+                    <b>Zijie Ye</b>,
+                    <a href="https://hcsi.cs.tsinghua.edu.cn/">Jia Jia</a>,
+                    Haozhe Wu,
+                    Shuo Huang,
+                    Shikun Sun,
+                    <a href="https://scholar.google.com/citations?user=jSwNd3MAAAAJ">Junliang Xing</a>
+                    <br>
+                    <em>ICASSP</em>, 2023
+                    <br>
+                    <a href="https://hcsi.cs.tsinghua.edu.cn/Paper/Paper23/ICASSP23_YEZIJIE.pdf">PDF</a>
+                    /
+                    <a href="https://github.com/abcyzj/CrossGesture">Code</a>
+                    <p></p>
+                    <p>
+                        We propose to synthesize co-speech gestures using discrete
+                        motion representation (DMR). By learning a DMR space for
+                        gesture motions and modeling the distribution of DMR, our
+                        approach generates more high-quality salient motions.
+                    </p>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                    <img src='/static/images/survey.jpg' width="160">
+                    </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2666651021000309">
+                        <span class="papertitle">Human motion modeling with deep learning: A survey</span>
+                    </a>
+                    <br>
+                    <b>Zijie Ye</b>,
+                    Haozhe Wu,
+                    <a href="https://hcsi.cs.tsinghua.edu.cn/">Jia Jia</a>
+                    <br>
+                    <em>AI Open</em>, 2022
+                    <br>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2666651021000309">Paper</a>
+                    <p></p>
+                    <p>
+                        We present a comprehensive survey of recent human motion modeling researches with deep learning techniques.
+                    </p>
+                </td>
+            </tr>
+
+
+            <tr onmouseout="dance_stop()" onmouseover="dance_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='dance_image'><video  width=100% height=100% muted autoplay loop>
+                    <source src="/static/video/dance.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='/static/images/dance.jpg' width="160">
+                    </div>
+                    <script type="text/javascript">
+                    function dance_start() {
+                        document.getElementById('dance_image').style.opacity = "1";
+                    }
+
+                    function dance_stop() {
+                        document.getElementById('dance_image').style.opacity = "0";
+                    }
+                    dance_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3414005">
+                        <span class="papertitle">ChoreoNet: Towards Music to Dance Synthesis with Choreographic Action Unit</span>
+                    </a>
+                    <br>
+                    <b>Zijie Ye</b>,
+                    Haozhe Wu,
+                    <a href="https://hcsi.cs.tsinghua.edu.cn/">Jia Jia</a>,
+                    Yaohua Bu,
+                    Wei Chen,
+                    Fanbo Meng,
+                    Yanfeng Wang
+                    <br>
+                    <em>ACM MM Oral</em>, 2020
+                    <br>
+                    <a href="https://hcsi.cs.tsinghua.edu.cn/Paper/Paper20/MM20-YEZIJIE.pdf">PDF</a>
+                    /
+                    <a href="https://arxiv.org/abs/2009.07637">arXiv</a>
+                    <p></p>
+                    <p>
+                        We propose to formalize the human choreography knowledge by defining CAU and introduce it into music-to-dance synthesis. We propose a two-stage framework ChoreoNet to implement the music-CAU-skeleton mapping. Experiments demonstrate the effectiveness of our meth
+                    </p>
+                </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+          
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Misc</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>  
+            <tr>
+                <td width="0%">
+                    <ul>
+                        <li>Gold Medal, China Chemistry Olympiad, 2015</li>
+                        <li>Tsinghua University Freshman Scholarship, 2016</li>
+                        <li>Excellent Undergraduate of Dept. of CST, 2020</li>
+                        <li>84 Innovation Scholarship of Dept. of CST, 2021</li>
+                    </ul>
+                </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
