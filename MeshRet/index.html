@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Skinned Motion Retargeting with Dense Geometric Interaction Perception">
+  <meta property="og:title" content="MeshRet" />
+  <meta property="og:description" content="Skinned Motion Retargeting with Dense Geometric Interaction Perception" />
+  <meta property="og:url" content="https://abcyzj.github.io/MeshRet" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="MeshRet">
+  <meta name="twitter:description" content="Skinned Motion Retargeting with Dense Geometric Interaction Perception">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Skinned Motion Retargeting">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MeshRet</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Skinned Motion Retargeting with Dense Geometric Interaction Perception</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://abcyzj.github.io/" target="_blank">Zijie Ye</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://jia-wei-liu.github.io/" target="_blank">Jia-Wei Liu</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://hcsi.cs.tsinghua.edu.cn/" target="_blank">Jia Jia</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://skipper17.github.io/" target="_blank">Shikun Sun</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/view/showlab/" target="_blank">Mike Zheng Shou</a><sup>2</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Tsinghua University,</span>
+              <span class="author-block"><sup>2</sup>National University of Singapore</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">NeurIPS 2024 Spotlight</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/MeshRet-camera.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/abcyzj/MeshRet/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/MeshRetDemo.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          By aligning the DMI field during retargeting, MeshRet not only preserves motion semantics but also prevents
+          self-interpenetration and ensures contact preservation.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Capturing and maintaining geometric interactions among different body parts is crucial for successful motion retargeting
+              in skinned characters. Existing approaches often overlook body geometries or add a geometry correction stage after skeletal
+              motion retargeting. This results in conflicts between skeleton interaction and geometry correction, leading to issues such
+              as jittery, interpenetration, and contact mismatches. To address these challenges, we introduce a new retargeting framework,
+              MeshRet, which directly models the dense geometric interactions in motion retargeting. Initially, we establish dense mesh
+              correspondences between characters using semantically consistent sensors (SCS), effective across diverse mesh topologies.
+              Subsequently, we develop a novel spatio-temporal representation called the dense mesh interaction (DMI) field. This field,
+              a collection of interacting SCS feature vectors, skillfully captures both contact and non-contact interactions between body
+              geometries. By aligning the DMI field during retargeting, MeshRet not only preserves motion semantics but also prevents
+              self-interpenetration and ensures contact preservation. Extensive experiments on the public Mixamo dataset and our newly-collected
+              ScanRet dataset demonstrate that MeshRet achieves state-of-the-art performance. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="content">
+        <h2 class="title is-3">Method Overview</h2>
+      </div>
+      <img class="center-image" src="static/images/dmi.png" width="80%" />
+      <p class="level-set has-text-justified">
+        Left: Derive SCS from the semantic coordinates (b, l, φ)
+        across different characters. The sensor features encompasses the sensor’s
+        location and its tangent space matrix.
+        Right: The DMI field effectively captures both contact and non-contact
+        interactions. In the second example, the body sensors (yellow points)
+        are located in the tangent plane of the hand sensors (blue points), signifying a contact interaction.
+      </p>
+      <img class="center-image" src="static/images/pipeline.png" width="80%" />
+      <p class="level-set has-text-justified">
+        Overview of the proposed MeshRet. The pipeline begins with the extraction of the DMI field using sensor
+        forward kinematics, and pairwise interaction feature selection. This DMI field, in conjunction with
+        static geometric features, is fed into an encoder-decoder network. The network predicts the target motion
+        sequence, which is aligned with the target character’s geometry and the original DMI field.
+      </p>
+    </div>
+  </section>
+
+  <!-- Image carousel -->
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/comparison.png" width="70%" class="center-image" />
+            <h2 class="subtitle has-text-centered">
+              Qualitative comparison between the proposed MeshRet and the state-of-the-art methods.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/jitter.png" width="80%" class="center-image" />
+            <h2 class="subtitle has-text-centered">
+              Our method does suffer from jittery artifacts, which are common in existing methods.
+            </h2>
+            <img src="static/images/noisy.png" width="80%" class="center-image" />
+            <h2 class="subtitle has-text-centered">
+              MeshRet relies on inputs with clean contact; motion clips exhibiting severe interpenetration yield poor outcomes.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+<pre><code>
+@article{ye2024skinned,
+  title={Skinned Motion Retargeting with Dense Geometric Interaction Perception},
+  author={Ye, Zijie and Liu, Jia-Wei and Jia, Jia and Sun, Shikun and Shou, Mike Zheng},
+  journal={Advances in Neural Information Processing Systems},
+  year={2024}
+}
+</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a>.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
